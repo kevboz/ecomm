@@ -171,6 +171,9 @@
             cartIndex += 1;
             
         }
+
+        cartString += "<a href='/shop/checkout' class='btn btn-warning' id='checkout'>Checkout</a>";
+
         document.getElementById("cart").setAttribute('data-content', cartString);
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[id="cart"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
